@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <style>
+        body{
+            background-image: url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        #search_box{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap:20px;
+            background-color:none;
+            border-radius: 30px;
+            margin-top: 5%;
+            margin-bottom:100px;
+        }
+        #search_box>#nameofmovie{
+            width:40%;
+            height:40px;
+            background-color:yellow ;
+            border-radius: 20px;
+            font-size:xx-large;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #nameofmovie::placeholder{
+            font-size: xx-large;
+            color:black;
+            text-align: center;
+        }
+        #search_box>#searchbutton{
+            width:20%;
+            font-size:xx-large;
+            background-color:yellow ;
+            border-radius: 20px;
+        }
+        #moviedisplay{
+            margin:auto;
+            width:50%;
+            text-align: center;
+            color:yellow;
+            background-color:none;
+        }
+        #title{
+            display:flex;
+            background-color: yellow;
+            color:black;
+            justify-content: center;
+            align-items: center;
+            font-size:80px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="title">Movie App</div>
+    <div id="search_box">
+        <input id="nameofmovie" type="text" placeholder="Search movie by name">
+        <button onclick="searchmovie()" id="searchbutton">Search</button>
+    </div>
+    <div id="moviedisplay"></div>
+</body>
+</html>
+<script src="index.js"></script>
